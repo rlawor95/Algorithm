@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int number = 10;
-int data[] = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
+int _data[] = {100, 1, 2, 3, 5, 9, 5, 6, 4, 5};
 
 void show()
 {
     int i;
-    for (i = 0; i < number; i++)
+    for (i = 0; i < sizeof(_data) / sizeof(int); i++)
     {
-        printf("%d ", data[i]);
+        printf("%d ", _data[i]);
     }
 }
 
@@ -19,30 +20,61 @@ inline void swap(int &a, int &b)
     b = t;
 }
 
-void quickSort(int A[], int low, int high)
+// void quickSort(int A[], int low, int high)
+// {
+//     if (low >= high)
+//         return; // base condition
+
+//     // divide process
+//     int i = low - 1, j = low;
+//     int &pivot = A[high];
+
+//     for (; j < high; ++j)
+//     {
+//         if (A[j] < pivot)
+//             swap(A[++i], A[j]);
+//     }
+//     swap(A[++i], pivot);
+
+//     // conquer process
+//     quickSort(A, low, i - 1);
+//     quickSort(A, i + 1, high);
+// }
+
+void quickSort(int data[], int start, int end)
 {
-    if (low >= high)
-        return; // base condition
+    if (start >= end) // 원소가 1개인 경우
+        return;
 
-    // divide process
-    int i = low - 1, j = low;
-    int &pivot = A[high];
+    int pivot = start;
+    int left = start + 1;
+    int right = end;
 
-    for (; j < high; ++j)
+    while (left <= right) // 엇갈릴 때까지 반복
     {
-        if (A[j] < pivot)
-            swap(A[++i], A[j]);
-    }
-    swap(A[++i], pivot);
+        //left는 피벗보다 큰 값을 찾을 때 까지 순회
+        while (left <= end && data[left] <= data[pivot])
+            left++;
 
-    // conquer process
-    quickSort(A, low, i - 1);
-    quickSort(A, i + 1, high);
+        //right는 피벗보다 작은 값을 찾을 때 까지 순회
+        while (right > start && data[right] >= data[pivot])
+            right--;
+
+        if (left > right)
+            swap(data[pivot], data[right]);
+        else
+            swap(data[left], data[right]);
+    }
+
+    quickSort(data, start, right - 1);
+    quickSort(data, right + 1, end);
 }
+
 
 int main(void)
 {
-    quickSort(data, 0, number - 1);
+    quickSort(_data, 0, sizeof(_data) / sizeof(int) - 1);
     show();
+    cout << "quick sort" << endl;
     return 0;
 }
