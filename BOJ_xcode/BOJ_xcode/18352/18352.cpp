@@ -1,4 +1,4 @@
-//백준 18352번 특정 거리의 도시 찾기
+
 #include <iostream>
 #include <queue>
 #include <vector>

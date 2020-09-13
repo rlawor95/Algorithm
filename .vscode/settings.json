@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "new": "cpp",
+        "memory": "cpp",
+        "utility": "cpp",
+        "queue": "cpp"
+    }
+}
