@@ -20,7 +20,7 @@ int main()
     
     for(int i=0; i<n; i++)
     {
-        int minvalue=10001; // 카드의 맥스값은 10000
+        int minvalue=10001; // 카드의 맥스ㅎ값은 10000
         for(int j=0; j<m; j++)
         {
             int v;
