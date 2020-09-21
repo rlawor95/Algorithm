@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39B198D7251791E1007D04D5 /* 2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39B198D6251791E1007D04D5 /* 2.cpp */; };
+		39C41DCA251903750070AD25 /* 3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C41DC9251903750070AD25 /* 3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,7 @@
 		39B198D6251791E1007D04D5 /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
 		39B48046250E661B0016619B /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
 		39B48049250E7B200016619B /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
+		39C41DC9251903750070AD25 /* 3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3.cpp; sourceTree = "<group>"; };
 		39DAA3C0250E540D00779AB4 /* BOJ_xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ_xcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DAA3CD250E546300779AB4 /* 18352.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 18352.cpp; sourceTree = "<group>"; };
 		39DAA3D2250E5DEE00779AB4 /* 5585.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5585.cpp; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 			children = (
 				39B198D125176417007D04D5 /* 1.cpp */,
 				39B198D6251791E1007D04D5 /* 2.cpp */,
+				39C41DC9251903750070AD25 /* 3.cpp */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -199,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B198D7251791E1007D04D5 /* 2.cpp in Sources */,
+				39C41DCA251903750070AD25 /* 3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
