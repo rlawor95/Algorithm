@@ -28,22 +28,25 @@ int main()
     vector<int>d(m+1,10001);
     
     d[0]=0;
+    
     for(int i=0; i<n; i++)
     {
-        for(int j=arr[i]; j<=m; j++)
+        int money = arr[i];
+        while(money<=m)
         {
-            int idx = j-arr[i];
-            if(d[idx] != 10001)
-            {
-                d[j] = min(d[j],d[idx]+1);
-            }
+            d[money] = min(d[money], d[money-arr[i]]+1);
+            money+=1;
         }
+        
+        for(int j=0; j<=m; j++)
+        cout<<"idx:"<<j<<" "<<d[j]<<"  ";
+        cout<<endl;
     }
     
-    if(d[m]==10001)
-        cout<<-1<<endl;
-    else
-        cout<<d[m]<<endl;
+//    if(d[m]>10000)
+//        cout<<-1<<endl;
+//    else
+//        cout<<d[m]<<endl;
     
     return 0;
 }
