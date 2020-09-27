@@ -59,4 +59,23 @@ int main(void)
             }
         }
     }
+    
+    // 수행된 결과를 출력
+    for (int a = 1; a <= n; a++)
+    {
+        for (int b = 1; b <= n; b++)
+        {
+            // 도달할 수 없는 경우, 무한(INFINITY)이라고 출력
+            if (graph[a][b] == INF)
+            {
+                cout << "INFINITY" << ' ';
+            }
+            // 도달할 수 있는 경우 거리를 출력
+            else
+            {
+                cout << graph[a][b] << ' ';
+            }
+        }
+        cout << '\n';
+    }
 }
