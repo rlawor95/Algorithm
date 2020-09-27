@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3956212D251FAEBD005119AC /* Dijkstra1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39562127251FAE65005119AC /* Dijkstra1.cpp */; };
+		3908A956252066C800B41326 /* Dijkstra_heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3908A955252066C800B41326 /* Dijkstra_heap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3908A955252066C800B41326 /* Dijkstra_heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra_heap.cpp; sourceTree = "<group>"; };
 		39562127251FAE65005119AC /* Dijkstra1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra1.cpp; sourceTree = "<group>"; };
 		395D4C0C251BA0A20031AB88 /* 4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4.cpp; sourceTree = "<group>"; };
 		39AA696F2512492C0062DB3D /* KnightOfKingdom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KnightOfKingdom.cpp; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				39562127251FAE65005119AC /* Dijkstra1.cpp */,
+				3908A955252066C800B41326 /* Dijkstra_heap.cpp */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -213,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3956212D251FAEBD005119AC /* Dijkstra1.cpp in Sources */,
+				3908A956252066C800B41326 /* Dijkstra_heap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

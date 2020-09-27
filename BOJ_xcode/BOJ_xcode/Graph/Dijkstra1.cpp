@@ -4,7 +4,7 @@
 //
 //  Created by 김재경 on 2020/09/27.
 //  Copyright © 2020 김재경. All rights reserved.
-//  간단한 다익스트라 알고리즘 with 나동빈
+//  간단한 다익스트라 알고리즘 with 나동빈 O(V^2)시간복잡도
 
 #include<iostream>
 #include<vector>
@@ -81,6 +81,19 @@ int main()
     
     dijkstra(start);
     
-    
+    // 모든 노드로 가기 위한 최단 거리를 출력
+    for (int i = 1; i <= n; i++)
+    {
+        // 도달할 수 없는 경우, 무한(INFINITY)이라고 출력
+        if (d[i] == INF)
+        {
+            cout << "INFINITY" << '\n';
+        }
+        // 도달할 수 있는 경우 거리를 출력
+        else
+        {
+            cout << d[i] << '\n';
+        }
+    }
     return 0;
 }
