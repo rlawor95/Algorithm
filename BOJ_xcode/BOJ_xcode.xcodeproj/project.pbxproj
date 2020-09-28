@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3908A95F2520E2AC00B41326 /* 1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3908A95E2520E2AC00B41326 /* 1.cpp */; };
+		396B14F825222E940048725C /* 2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 396B14F725222E940048725C /* 2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,10 @@
 		3908A955252066C800B41326 /* Dijkstra_heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra_heap.cpp; sourceTree = "<group>"; };
 		3908A95A2520D4B200B41326 /* FloydWarshall.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FloydWarshall.cpp; sourceTree = "<group>"; };
 		3908A95E2520E2AC00B41326 /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
+		390FE01D2520F4A50055EF33 /* Palindrome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Palindrome.cpp; sourceTree = "<group>"; };
 		39562127251FAE65005119AC /* Dijkstra1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra1.cpp; sourceTree = "<group>"; };
 		395D4C0C251BA0A20031AB88 /* 4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4.cpp; sourceTree = "<group>"; };
+		396B14F725222E940048725C /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
 		39AA696F2512492C0062DB3D /* KnightOfKingdom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KnightOfKingdom.cpp; sourceTree = "<group>"; };
 		39B198B62516447E007D04D5 /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
 		39B198B925164EF0007D04D5 /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				3908A955252066C800B41326 /* Dijkstra_heap.cpp */,
 				3908A95A2520D4B200B41326 /* FloydWarshall.cpp */,
 				3908A95E2520E2AC00B41326 /* 1.cpp */,
+				396B14F725222E940048725C /* 2.cpp */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				39B48045250E66060016619B /* Greedy */,
 				39DAA3D1250E5DD200779AB4 /* 5585 */,
 				39DAA3CA250E542600779AB4 /* 18352 */,
+				390FE01D2520F4A50055EF33 /* Palindrome.cpp */,
 			);
 			path = BOJ_xcode;
 			sourceTree = "<group>";
@@ -219,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3908A95F2520E2AC00B41326 /* 1.cpp in Sources */,
+				396B14F825222E940048725C /* 2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
