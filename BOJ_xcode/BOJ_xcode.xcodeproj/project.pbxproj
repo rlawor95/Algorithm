@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		396B14F825222E940048725C /* 2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 396B14F725222E940048725C /* 2.cpp */; };
+		39D69AAA2524C5E5001C8E94 /* unionfind_recursive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39D69AA92524C5E5001C8E94 /* unionfind_recursive.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +42,7 @@
 		39B48046250E661B0016619B /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
 		39B48049250E7B200016619B /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
 		39C41DC9251903750070AD25 /* 3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3.cpp; sourceTree = "<group>"; };
+		39D69AA92524C5E5001C8E94 /* unionfind_recursive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unionfind_recursive.cpp; sourceTree = "<group>"; };
 		39DAA3C0250E540D00779AB4 /* BOJ_xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ_xcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DAA3CD250E546300779AB4 /* 18352.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 18352.cpp; sourceTree = "<group>"; };
 		39DAA3D2250E5DEE00779AB4 /* 5585.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5585.cpp; sourceTree = "<group>"; };
@@ -118,6 +119,23 @@
 			path = Greedy;
 			sourceTree = "<group>";
 		};
+		39D69AA72524C468001C8E94 /* BOJ */ = {
+			isa = PBXGroup;
+			children = (
+				39DAA3D1250E5DD200779AB4 /* 5585 */,
+				39DAA3CA250E542600779AB4 /* 18352 */,
+			);
+			path = BOJ;
+			sourceTree = "<group>";
+		};
+		39D69AA82524C482001C8E94 /* UnionFind */ = {
+			isa = PBXGroup;
+			children = (
+				39D69AA92524C5E5001C8E94 /* unionfind_recursive.cpp */,
+			);
+			path = UnionFind;
+			sourceTree = "<group>";
+		};
 		39DAA3B7250E540D00779AB4 = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +155,14 @@
 		39DAA3C2250E540D00779AB4 /* BOJ_xcode */ = {
 			isa = PBXGroup;
 			children = (
+				39D69AA82524C482001C8E94 /* UnionFind */,
+				39D69AA72524C468001C8E94 /* BOJ */,
 				39562126251FAE3C005119AC /* Graph */,
 				39B198D0251763F0007D04D5 /* DynamicProgramming */,
 				39B198BD25166FE5007D04D5 /* BinarySearch */,
 				39B198B525164463007D04D5 /* Sorting */,
 				39AA696E251248BE0062DB3D /* Implementation */,
 				39B48045250E66060016619B /* Greedy */,
-				39DAA3D1250E5DD200779AB4 /* 5585 */,
-				39DAA3CA250E542600779AB4 /* 18352 */,
 				390FE01D2520F4A50055EF33 /* Palindrome.cpp */,
 			);
 			path = BOJ_xcode;
@@ -223,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396B14F825222E940048725C /* 2.cpp in Sources */,
+				39D69AAA2524C5E5001C8E94 /* unionfind_recursive.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
