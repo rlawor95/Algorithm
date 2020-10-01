@@ -1,12 +1,10 @@
 //
-//  unionfind_recursive.cpp
+//  unionfind_cycle.cpp
 //  BOJ_xcode
 //
-//  Created by 김재경 on 2020/09/30.
+//  Created by 김재경 on 2020/10/01.
 //  Copyright © 2020 김재경. All rights reserved.
-//  서로소 집합 알고리즘 with 나동빈
-//  노드 개수 v 간선 개수 m 개일 때 시간복잡도 O(vm)
-//  경로 압축 기법 적용 시
+//  서로소 집합을 활용한 사이클 판별 알고리즘 with 나동빈
 
 #include <stdio.h>
 #include <stdio.h>
@@ -15,24 +13,15 @@
 #include<queue>
 using namespace std;
 
-
 // 노드의 개수(V)와 간선(Union 연산)의 개수(E)
 // 노드의 개수는 최대 100,000개라고 가정
 int v, e;
-int parent[100001]; // 부모 테이블 초기화하기
+int parent[100001]; // 부모 테이블 초기화
 
 // 특정 원소가 속한 집합을 찾기
-//int findParent(int x)
-//{
-//    // 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
-//    if (x == parent[x])
-//        return x;
-//    return findParent(parent[x]);
-//}
-
-// 경로 압축 기법 적용 함수
 int findParent(int x)
 {
+    // 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
     if (x == parent[x])
         return x;
     return parent[x] = findParent(parent[x]);
@@ -43,7 +32,6 @@ void unionParent(int a, int b)
 {
     a = findParent(a);
     b = findParent(b);
-    
     if (a < b)
         parent[b] = a;
     else
@@ -60,27 +48,31 @@ int main(void)
         parent[i] = i;
     }
     
-    // Union 연산을 각각 수행
+    bool cycle = false; // 사이클 발생 여부
+    
     for (int i = 0; i < e; i++)
     {
         int a, b;
         cin >> a >> b;
-        unionParent(a, b);
+        // 사이클이 발생한 경우 종료
+        if (findParent(a) == findParent(b))
+        {
+            cycle = true;
+            break;
+        }
+        // 사이클이 발생하지 않았다면 합집합(Union) 연산 수행
+        else
+        {
+            unionParent(a, b);
+        }
     }
     
-    // 각 원소가 속한 집합 출력하기
-    cout << "각 원소가 속한 집합: ";
-    for (int i = 1; i <= v; i++)
+    if (cycle)
     {
-        cout << findParent(i) << ' ';
+        cout << "사이클이 발생했습니다." << '\n';
     }
-    cout << '\n';
-    
-    // 부모 테이블 내용 출력하기
-    cout << "부모 테이블: ";
-    for (int i = 1; i <= v; i++)
+    else
     {
-        cout << parent[i] << ' ';
+        cout << "사이클이 발생하지 않았습니다." << '\n';
     }
-    cout << '\n';
 }
