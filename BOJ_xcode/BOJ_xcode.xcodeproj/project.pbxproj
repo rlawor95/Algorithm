@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39D69AD525260B45001C8E94 /* q6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39D69AD425260B45001C8E94 /* q6.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		39DAA3BE250E540D00779AB4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -47,6 +51,8 @@
 		39D69AC42525D19B001C8E94 /* q2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q2.cpp; sourceTree = "<group>"; };
 		39D69AC82525D3DB001C8E94 /* q3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q3.cpp; sourceTree = "<group>"; };
 		39D69ACC2525D85F001C8E94 /* q4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q4.cpp; sourceTree = "<group>"; };
+		39D69AD125260288001C8E94 /* q5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q5.cpp; sourceTree = "<group>"; };
+		39D69AD425260B45001C8E94 /* q6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q6.cpp; sourceTree = "<group>"; };
 		39DAA3C0250E540D00779AB4 /* BOJ_xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ_xcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DAA3CD250E546300779AB4 /* 18352.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 18352.cpp; sourceTree = "<group>"; };
 		39DAA3D2250E5DEE00779AB4 /* 5585.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5585.cpp; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 				39D69AC42525D19B001C8E94 /* q2.cpp */,
 				39D69AC82525D3DB001C8E94 /* q3.cpp */,
 				39D69ACC2525D85F001C8E94 /* q4.cpp */,
+				39D69AD125260288001C8E94 /* q5.cpp */,
+				39D69AD425260B45001C8E94 /* q6.cpp */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D69AD525260B45001C8E94 /* q6.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
