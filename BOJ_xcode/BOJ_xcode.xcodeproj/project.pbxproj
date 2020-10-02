@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39D69AD525260B45001C8E94 /* q6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39D69AD425260B45001C8E94 /* q6.cpp */; };
+		395ECAE9252763A000941C00 /* q1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395ECAE8252763A000941C00 /* q1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +29,7 @@
 		390FE01D2520F4A50055EF33 /* Palindrome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Palindrome.cpp; sourceTree = "<group>"; };
 		39562127251FAE65005119AC /* Dijkstra1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra1.cpp; sourceTree = "<group>"; };
 		395D4C0C251BA0A20031AB88 /* 4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4.cpp; sourceTree = "<group>"; };
+		395ECAE8252763A000941C00 /* q1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = q1.cpp; sourceTree = "<group>"; };
 		396B14F725222E940048725C /* 2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2.cpp; sourceTree = "<group>"; };
 		39AA696F2512492C0062DB3D /* KnightOfKingdom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = KnightOfKingdom.cpp; sourceTree = "<group>"; };
 		39B198B62516447E007D04D5 /* 1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1.cpp; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				39AA696F2512492C0062DB3D /* KnightOfKingdom.cpp */,
+				395ECAE8252763A000941C00 /* q1.cpp */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -261,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D69AD525260B45001C8E94 /* q6.cpp in Sources */,
+				395ECAE9252763A000941C00 /* q1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
